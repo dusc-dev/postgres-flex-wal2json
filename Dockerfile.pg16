@@ -2,5 +2,5 @@ FROM flyio/postgres-flex:16
 
 RUN apt-get install postgresql-16-wal2json
 
-RUN mkdir -p /var/lib/postgresql/data \
+RUN mkdir -p /data/postgresql/data \
   && echo "wal_level = 'logical'" >> /data/postgresql/data/postgresql.conf
